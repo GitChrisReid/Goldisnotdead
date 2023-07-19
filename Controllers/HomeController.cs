@@ -1,8 +1,8 @@
-﻿using goldisnotdead.Models;
+﻿using Goldisnotdead.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace goldisnotdead.Controllers
+namespace Goldisnotdead.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,4 +1,4 @@
-namespace goldisnotdead.Models
+namespace Goldisnotdead.Models
 {
     public class ErrorViewModel
     {
