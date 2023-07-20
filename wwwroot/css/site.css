@@ -1,25 +1,31 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #000080; /* Dark blue text */
+    margin-bottom: 60px;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Blue focus outline */
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #f9f1f1;
+    background-color: #add8e6; /* Light blue background */
     padding: 10px;
     font-family: Arial, sans-serif;
-    color: #708090;
+    color: #000080; /* Dark blue text */
 }
 
     .flex-container h2 {
@@ -33,11 +39,10 @@ html {
         line-height: 1.5;
     }
 
-html {
-  position: relative;
-  min-height: 100%;
+.text-center h1 {
+    color: #000080; /* Dark blue text */
 }
 
-body {
-    margin-bottom: 60px;
+.text-center p {
+    color: #708090; /* Slate gray text */
 }
