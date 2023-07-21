@@ -18,7 +18,12 @@ namespace Goldisnotdead.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Aboutme()
+        {
+            return View();
+        }
+
+        public IActionResult Resume()
         {
             return View();
         }

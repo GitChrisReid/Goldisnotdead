@@ -20,12 +20,20 @@ body {
 
 .flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     background-color: #add8e6; /* Light blue background */
     padding: 10px;
     font-family: Arial, sans-serif;
     color: #000080; /* Dark blue text */
+}
+
+#self {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
     .flex-container h2 {
@@ -46,3 +54,26 @@ body {
 .text-center p {
     color: #708090; /* Slate gray text */
 }
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 2px;
+    text-align: center;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+
+.social-media-buttons a img {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+

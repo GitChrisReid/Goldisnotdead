@@ -23,11 +23,21 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Aboutme">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Resume">Resumè</a>
                         </li>
                     </ul>
                 </div>
+                <button onclick="toggleDarkMode()">DarkMode</button>
             </div>
+            <script>
+                function toggleDarkMode() {
+                    const body = document.body;
+                    body.classList.toggle('dark-mode');
+                }
+            </script>
         </nav>
     </header>
     <div class="container">
@@ -38,9 +48,13 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Goldisnotdead - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p>Contact Me: keptnow@gmail.com</p>
         </div>
-    </footer>
+        <div class="social-media-buttons">
+            <a href="https://www.linkedin.com/in/creid80" target="_blank" rel="noopener noreferrer"></i><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop-code"></i><img src="images/tryhackme-icon.png" alt="TryHackMe"></a>
+        </div>
+        </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

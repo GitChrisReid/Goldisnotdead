@@ -10,7 +10,7 @@
             i++;
             setTimeout(typeWriter, speed);
         } else {
-            setTimeout(clearText, 7000); // Start clearText function after 7 seconds
+            setTimeout(clearText, 4000); // Start clearText function after 7 seconds
         }
     }
 
@@ -21,4 +21,10 @@
     }
 
     typeWriter(); // Start the typing animation
+
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+    }
+
 }
