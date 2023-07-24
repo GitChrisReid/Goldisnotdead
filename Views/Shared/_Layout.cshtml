@@ -9,52 +9,52 @@
     <link rel="stylesheet" href="~/Goldisnotdead.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Goldisnotdead</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Aboutme">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Resume">Resumè</a>
-                        </li>
-                    </ul>
+    <div class="content-wrapper">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Goldisnotdead</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Aboutme">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Resume">Resumè</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleDarkMode()">DarkMode</button>
                 </div>
-                <button onclick="toggleDarkMode()">DarkMode</button>
-            </div>
-            <script>
-                function toggleDarkMode() {
-                    const body = document.body;
-                    body.classList.toggle('dark-mode');
-                }
-            </script>
-        </nav>
-    </header>
-    <div class="container">
+                <script>
+                    function toggleDarkMode() {
+                        const body = document.body;
+                        body.classList.toggle('dark-mode');
+                    }
+                </script>
+            </nav>
+        </header>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             <p>Contact Me: keptnow@gmail.com</p>
         </div>
         <div class="social-media-buttons">
-            <a href="https://www.linkedin.com/in/creid80" target="_blank" rel="noopener noreferrer"></i><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop-code"></i><img src="images/tryhackme-icon.png" alt="TryHackMe"></a>
+            <a href="https://www.linkedin.com/in/creid80" target="_blank" rel="noopener noreferrer"><img src="/images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://tryhackme.com/p/zag" target="_blank" rel="noopener noreferrer"><img src="/images/tryhackme-icon.png" alt="TryHackMe"></a>
         </div>
-        </footer>
+    </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

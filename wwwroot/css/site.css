@@ -1,5 +1,19 @@
 html {
     font-size: 14px;
+    height: 100%; /* Added */
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #000080;
+    margin-bottom: 0;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    min-height: 100%; /* Modified */
+}
+
+.content-wrapper {
+    flex: 1 0 auto; /* Added */
 }
 
 @media (min-width: 768px) {
@@ -8,24 +22,23 @@ html {
     }
 }
 
-body {
-    background-color: #f0f8ff; /* Light blue background */
-    color: #000080; /* Dark blue text */
-    margin-bottom: 60px;
-}
-
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Blue focus outline */
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #add8e6; /* Light blue background */
+    background-color: #add8e6;
     padding: 10px;
     font-family: Arial, sans-serif;
-    color: #000080; /* Dark blue text */
+    color: #000080;
+}
+
+.content-container {
+    flex: 1 0 auto;
+    overflow: auto;
 }
 
 #self {
@@ -36,36 +49,40 @@ body {
     margin-right: auto;
 }
 
-    .flex-container h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        justify-content: center;
-    }
+.flex-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
 
-    .flex-container p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+.flex-container ul.edu {
+    margin: 0;
+}
+
+.flex-container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
 .text-center h1 {
-    color: #000080; /* Dark blue text */
+    color: #000080;
 }
 
 .text-center p {
-    color: #708090; /* Slate gray text */
+    color: #708090;
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: #f2f2f0;
     padding: 2px;
     text-align: center;
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+    position: sticky;
+    flex-shrink: 0; /* Added */
 }
 
-
 .social-media-buttons a img {
-    width: 40px; /* Set the desired width */
-    height: 40px; /* Set the desired height */
+    width: 40px;
+    height: 40px;
 }
 
 .dark-mode {
@@ -73,7 +90,14 @@ body {
     color: #fff;
 }
 
+.flex-headers {
+    font-weight: bold;
+    font-size: larger;
+}
 
-
-
-
+.organization {
+    font-style: italic;
+    font-size: small;
+    line-height: 1.0;
+    margin-left: 20px;
+}
