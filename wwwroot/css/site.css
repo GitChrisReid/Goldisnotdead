@@ -1,44 +1,24 @@
-html {
-    font-size: 14px;
-    height: 100%; /* Added */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: #f0f8ff;
-    color: #000080;
-    margin-bottom: 0;
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    min-height: 100%; /* Modified */
+#page-container {
+    position: relative;
+    min-height: 100%;
 }
 
-.content-wrapper {
-    flex: 1 0 auto; /* Added */
+#content-wrap {
+    padding-bottom: 80px;
+    Footer height
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #add8e6;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    color: #000080;
-}
-
-.content-container {
-    flex: 1 0 auto;
-    overflow: auto;
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    Set the height of the footer And any other styling you need
 }
 
 #self {
@@ -49,37 +29,6 @@ body {
     margin-right: auto;
 }
 
-.flex-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    justify-content: center;
-}
-
-.flex-container ul.edu {
-    margin: 0;
-}
-
-.flex-container p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.text-center h1 {
-    color: #000080;
-}
-
-.text-center p {
-    color: #708090;
-}
-
-.footer {
-    background-color: #f2f2f0;
-    padding: 2px;
-    text-align: center;
-    position: sticky;
-    flex-shrink: 0; /* Added */
-}
-
 .social-media-buttons a img {
     width: 40px;
     height: 40px;
@@ -88,16 +37,4 @@ body {
 .dark-mode {
     background-color: #333;
     color: #fff;
-}
-
-.flex-headers {
-    font-weight: bold;
-    font-size: larger;
-}
-
-.organization {
-    font-style: italic;
-    font-size: small;
-    line-height: 1.0;
-    margin-left: 20px;
 }
