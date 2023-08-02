@@ -2,16 +2,34 @@
     font-size: 72px;
 }
 
+.content {
+    padding: 4rem;
+}
+
 #typing-text {
     display: inline-block;
-    border-right: 2px solid #000; /* Blinking cursor style */
-    padding-right: 2px;
     font-size: 72px;
 }
 
-#typing-container {
+#typing-text::after {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 2px;
+    height: 1em;
+    border-right: 2px solid;
+    animation: blink 1s step-end infinite;
 }
 
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: inherit;
+    }
+}
 
 p {
     font-size: 26px;
@@ -33,6 +51,16 @@ p {
     position: relative;
 }
 
+.content-40 {
+    padding: 6.25rem 1rem;
+    background-color: #1a1d42;
+    color: var(--white);
+    /*    border-bottom: 40px solid #1a1d42;*/
+    bottom: -1px;
+    max-width: 100%;
+    position: relative;
+}
+
 
 .btn {
     background-color: darkgreen;
@@ -48,17 +76,6 @@ p {
     margin-right: 1rem;
 }
 
-
-
-.content-40 {
-    padding: 6.25rem 1rem;
-    background-color: #1a1d42;
-    color: var(--white);
-    border-bottom: 40px solid #1a1d42;
-    bottom: -1px;
-    max-width: 100%;
-    position: relative;
-}
 
 section {
     display: block;
@@ -158,6 +175,16 @@ element.style {
     border-radius: 50%;
     color: white;
 }
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25rem;
+    height: 100px;   
+}
+
+
+
 
 
 
