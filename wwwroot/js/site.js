@@ -1,36 +1,4 @@
-﻿//window.onload = function () {
-//    var i = 0;
-//    var text = "Chris Reid";
-//    var speed = 100; // You can adjust this value for typing speed
-//    var container = document.getElementById('typed-text');
-
-//    function typeWriter() {
-//        if (i < text.length) {
-//            container.innerHTML += text.charAt(i);
-//            i++;
-//            setTimeout(typeWriter, speed);
-//        } else {
-//            setTimeout(clearText, 4000); // Start clearText function after 7 seconds
-//        }
-//    }
-
-//    function clearText() {
-//        container.innerHTML = "";
-//        i = 0;
-//        typeWriter();
-//    }
-
-//    typeWriter(); // Start the typing animation
-
-//    function toggleDarkMode() {
-//        const body = document.body;
-//        body.classList.toggle('dark-mode');
-//    }
-
-//}
-
-
-const words = [
+﻿const words = [
     "security.",
     "web development.",
     "penetration testing.",
@@ -71,4 +39,14 @@ function typeNextWord() {
 document.addEventListener("DOMContentLoaded", () => {
     typeNextWord(); // Start the typing animation
 });
+
+function toggleEducation() {
+    var educationList = document.getElementById("education-list");
+    if (educationList.style.display === "none") {
+        educationList.style.display = "block";
+    } else {
+        educationList.style.display = "none";
+    }
+}
+
 
